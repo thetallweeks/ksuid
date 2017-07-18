@@ -11,7 +11,8 @@
     "coverage": "nyc npm -s run test",
     "lint": "as-i-preach",
     "pretest": "npm run -s lint",
-    "test": "ava"
+    "test": "ava",
+    "build": "babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,9 @@
   "devDependencies": {
     "@novemberborn/as-i-preach": "^10.1.0",
     "ava": "^0.20.0",
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "codecov": "^2.2.0",
     "lolex": "^1.6.0",
     "nyc": "^11.0.3"
